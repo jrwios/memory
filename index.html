@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Jeu du memory</h1>
+    <div class="controls">
+        <div>
+            <p>Difficulté:</p>
+            <button id="facile" class="btn-difficulte active">Facile</button>
+            <button id="moyen" class="btn-difficulte">Moyen</button>
+            <button id="difficile" class="btn-difficulte">Difficle</button>
+        </div>
+        <div id="info-jeu">
+            <p id="compteur">
+                Paires trouvéss :
+                <span id="paires-trouvees">0</span>/
+                <span id="paires-total">0</span>
+            </p>
+            <p id="coups">Coups joués : <span id="nombre-coups">0</span></p>
+            <p id="temps">Temps : <span id="chrono">0</span></p>
+        </div>
+        <button id="nouvelle-partie">Nouvelle partie</button>
+    </div>
+    <div id="grille"></div>
+
+    <div id="message-victoire" class="hidden">
+        Bravo ! Vous avez gagné !
+        <p>
+            Temps : <span id="temps-final">00:00</span>
+            |
+            Coups : <span id="coups-final">0</span>
+        </p>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
